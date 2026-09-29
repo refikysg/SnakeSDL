@@ -57,9 +57,8 @@ g++ -std=c++17 SnakeSDL.cpp -o snake $(sdl2-config --cflags --libs) -lSDL2_ttf -
 Place these next to the executable:
 
 - `Arial.ttf`: any TrueType font works under this name. If it is missing, the game tries common system fonts (Arial, DejaVu Sans, Liberation Sans, Noto Sans).
-- `snake_music.wav`: background music. Without it the game runs with sound effects only.
 
-Fonts and music are not included in this repository.
+Fonts are not included in this repository.
 
 ## Tuning
 
