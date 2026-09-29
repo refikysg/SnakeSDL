@@ -1,0 +1,49 @@
+# Cross-Platform SDL2 Snake Game in C++
+
+A feature-rich Snake game built with C++ and SDL2, featuring multiple difficulty levels, obstacles, golden fruits, themes, and sound effects.
+
+## Prerequisites
+
+To compile and run this game on Windows, you will need the **MSYS2** environment with the UCRT64 toolchain.
+
+### 1. Install MSYS2 and Dependencies
+Open your **MSYS2 UCRT64** terminal and run the following command to install the GCC compiler and SDL2 development libraries:
+
+```bash
+pacman -S mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-SDL2 mingw-w64-ucrt-x86_64-SDL2_ttf mingw-w64-ucrt-x86_64-SDL2_mixer
+```
+*(Press `Y` and Enter if prompted to confirm).*
+
+---
+
+## Compilation Instructions
+
+1. **Navigate to the project folder** in your MSYS2 UCRT64 terminal (replace the example path with your actual repository path):
+   ```bash
+   cd /c/path/to/your/project/folder
+   ```
+
+2. **Compile the source code** using `g++`:
+   ```bash
+   g++ SnakeSDL.cpp -o snake.exe -mwindows -static-libgcc -static-libstdc++ -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_mixer
+   ```
+
+---
+
+## Running the Game
+
+Make sure that your asset files (`Arial.ttf`, `snake_music.wav`) and the required SDL2 `.dll` files are in the same directory as the generated `snake.exe`. 
+
+You can run the game directly from the terminal:
+```bash
+./snake.exe
+```
+
+## Controls
+- **Menu / Difficulty:** Press `1` (Easy), `2` (Medium), or `3` (Hard), then press `Enter` to start.
+- **Movement:** `W`, `A`, `S`, `D` or Arrow Keys.
+- **Pause / Resume:** `P`
+- **Restart (on Game Over):** `N`
+- **Toggle Dark/Light Theme:** `T`
+- **Toggle Music:** `M`
+- **Exit:** `Escape`
