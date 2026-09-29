@@ -1,0 +1,20 @@
+# Build output
+snake
+snake.exe
+*.o
+*.obj
+*.exe
+*.dll
+
+# Assets you may not have the right to redistribute
+Arial.ttf
+arial.ttf
+
+# Local high scores (only used if the pref path is unavailable)
+snake_highscores.txt
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
